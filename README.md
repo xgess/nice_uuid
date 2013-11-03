@@ -1,6 +1,6 @@
 # NiceUuid
 
-TODO: Write a gem description
+for user-facing UUIDs
 
 ## Installation
 
@@ -18,7 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+NiceUuid.generate(36)
+```
+will generate you a nice uuid with 4, dash-separated, readable words that is not greater than 36 characters
+Don't ask for one smaller than about 27 characters. Sorry, kids. It's stupidly simple for a reason.
 
 ## Contributing
 
