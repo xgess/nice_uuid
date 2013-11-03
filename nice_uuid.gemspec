@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.name          = "nice_uuid"
   spec.version       = NiceUuid::VERSION
   spec.authors       = ["Alex Gessner"]
-  spec.email         = ["gessner@shopkeep.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.email         = ["alex.gessner@gmail.com"]
+  spec.description   = 'nice and easy uuids'
+  spec.summary       = 'NiceUuid.generate(36) for a nice uuid with 4, dash-separated, readable words'
+  spec.homepage      = "https://github.com/xgess/nice_uuid"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -18,6 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.add_development_dependency "rspec"
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
 end
