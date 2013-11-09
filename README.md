@@ -1,6 +1,6 @@
 # NiceUuid
 
-for user-facing UUIDs
+ideal for user-facing UUIDs. You probably shouldn't use this if you are relying on unique identifiers in the multi-billions range. A very rough calculation revealed 10 million can be generated with a collision probability far below 1 ten-thousandth of a percent. If that sounds like it's good enough for you, then go forth friend, and use with confidence.
 
 ## Installation
 

@@ -15,5 +15,10 @@ describe NiceUuid do
     it 'eventually yields a solution for an obnoxious request' do
       NiceUuid::generate(27).length.should <= 27
     end
+
+    it 'does not have a collision in 100,000 attempts' do
+      array_of_results = (1..100000).map { NiceUuid::generate }
+      array_of_results.uniq.count.should == 100000
+    end
   end
 end

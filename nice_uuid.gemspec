@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = NiceUuid::VERSION
   spec.authors       = ["Alex Gessner"]
   spec.email         = ["alex.gessner@gmail.com"]
-  spec.description   = 'nice and easy uuids'
-  spec.summary       = 'NiceUuid.generate(36) for a nice uuid with 4, dash-separated, readable words'
+  spec.description   = 'nice and easy, user-facing uuids'
+  spec.summary       = 'NiceUuid.generate(36) for a pleasant uuid with 4, dash-separated, readable words'
   spec.homepage      = "https://github.com/xgess/nice_uuid"
   spec.license       = "MIT"
 
