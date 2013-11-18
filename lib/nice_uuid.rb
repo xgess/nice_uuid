@@ -4,10 +4,10 @@ module NiceUuid
   DEFAULT_NUMBER_OF_WORDS = 4
   DICTIONARY_PATH = File.dirname(__FILE__) + '/length_ordered_sanitized_dictionary.txt'
 
-  def self.generate(maximum=36)
+  def self.generate(length=36)
     10000.times do
       @solution = possible_nice_uuid
-      break if @solution.length <= maximum
+      break if @solution.length == length
     end
     @solution
   end

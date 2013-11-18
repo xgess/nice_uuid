@@ -12,8 +12,8 @@ describe NiceUuid do
       @nice_uuid.count('-').should == (NiceUuid::DEFAULT_NUMBER_OF_WORDS - 1)
     end
 
-    it 'eventually yields a solution for an obnoxious request' do
-      NiceUuid::generate(27).length.should <= 27
+    it 'yields a solution with the exact specified length' do
+      100.times { NiceUuid::generate(40).length.should == 40 }
     end
 
     it 'does not have a collision in 100,000 attempts' do
